@@ -4,12 +4,12 @@ on: [push]
 jobs:
   test-my-python-code:
     # select the os-image these jobs should run on
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     
     # define the Python versions that should be used
     strategy:
       matrix:
-        python-version: [2.7, 3.8]
+        python-version: [2.7, 3.8,3.11,3.12]
 
     steps:
       # step to check out the repository
