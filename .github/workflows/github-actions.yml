@@ -9,7 +9,7 @@ jobs:
     # define the Python versions that should be used
     strategy:
       matrix:
-        python-version: [2.7, 3.8,3.11,3.12]
+        python-version: [3.8,3.11,3.12]
 
     steps:
       # step to check out the repository
